@@ -1,0 +1,51 @@
+.tic-tac-toe {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: grid;
+   justify-content: center; /* Horizontally center */
+  align-items: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border: 1px solid #ccc;
+  font-size: 3em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.square.winning {
+  background-color: #9effa3;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
